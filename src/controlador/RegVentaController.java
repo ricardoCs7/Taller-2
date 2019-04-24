@@ -63,8 +63,8 @@ public class RegVentaController implements ActionListener{
       String sucursal= vReg.getJcSucursal().getSelectedItem().toString();
       int monto = Integer.parseInt(vReg.getTfMonto().getText());
       Fecha fecha = new Fecha(vReg.getTfDia().getText(),vReg.getTfMes().getText(),vReg.getTfAño().getText());
-      
-      Venta v = new Venta(monto, sucursal, monto, fecha, vendedor);
+      Date f = fecha.formatFecha();
+      Venta v = new Venta(monto, sucursal, monto, f, vendedor);
       
       vd.guardarVenta(v);
       

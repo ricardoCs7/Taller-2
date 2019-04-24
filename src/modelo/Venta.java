@@ -5,6 +5,8 @@
  */
 package modelo;
 
+import java.util.Date;
+
 /**
  *
  * @author Ricardo
@@ -15,10 +17,10 @@ public class Venta {
 
     private String sucursal;
     private int monto;
-    private Fecha fecha;
+    private Date fecha;
     private Vendedor vendedor;
 
-    public Venta(int id, String sucursal, int monto, Fecha fecha, Vendedor vendedor) {
+    public Venta(int id, String sucursal, int monto, Date fecha, Vendedor vendedor) {
         this.id = id;
         this.sucursal = sucursal;
         this.monto = monto;
@@ -50,13 +52,15 @@ public class Venta {
         this.monto = monto;
     }
 
-    public Fecha getFecha() {
+    public Date getFecha() {
         return fecha;
     }
 
-    public void setFecha(Fecha fecha) {
+    public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
+
+   
 
     public Vendedor getVendedor() {
         return vendedor;
