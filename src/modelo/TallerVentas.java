@@ -24,6 +24,7 @@ public class TallerVentas {
         VentanaInicio v = new VentanaInicio();
         v.setLocationRelativeTo(null);
         v.setVisible(true);
+        
     }
     
 }
